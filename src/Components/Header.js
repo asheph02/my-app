@@ -4,10 +4,10 @@ class Header extends Component {
   render() {
 
     if(this.props.data){
-      var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
+      var name = "Andrew Shepherd";
+      var occupation= "Biomedical Engineering Student graduating May 2021";
+      var description= "My aspiration in life is to help others through kindness, compassion, as well as research and development of medical technology – in this way I dream to change the world.";
+      var city= "Kitchener";
       var networks= this.props.data.social.map(function(network){
         return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
       })
@@ -35,7 +35,7 @@ class Header extends Component {
       <div className="row banner">
          <div className="banner-text">
             <h1 className="responsive-headline">I'm {name}.</h1>
-            <h3>I'm a Canada {city} based <span>{occupation}</span>. {description}.</h3>
+            <h3>I'm a {city} based <span>{occupation}</span>. {description}</h3>
             <hr />
             <ul className="social">
                {networks}
