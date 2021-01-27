@@ -4,7 +4,7 @@ class About extends Component {
   render() {
 
     if(this.props.data){
-      var name = "Andrew Shepherd";
+      /*var name = "Andrew Shepherd";
       var profilepic= "http://asheph02.github.io/my-app/images/"+this.props.data.image;
       var bio = this.props.data.bio;
       var street = this.props.data.address.street;
@@ -12,7 +12,7 @@ class About extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
-      var email = this.props.data.email;
+      var email = this.props.data.email;*/
       var resumeDownload = this.props.data.resumedownload;
     }
 
@@ -25,17 +25,17 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>{name}</span><br />
-						   <span>{street}<br />
-						         {city} {state}, {zip}
+						   <span>Andrew Shepherd</span><br />
+						   <span>Biomedical Engineering Co-op <br />
+						         University of Guelph
                    </span><br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span>
+						   <span>Based in Kitchener, Ontario</span><br />
+                     <span>asheph02@uoguelph.ca</span>
 					   </p>
                </div>
                <div className="columns download">
